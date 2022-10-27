@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko" dir="ltr"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layouts/layout1}">
+
+<div layout:fragment="content">
+    <section class="home-section bg-dark-60 portfolio-page-header parallax-bg" id="home"
+             data-background="/static/images/main/main1.png">
+
+        <div class="titan-caption">
+            <div class="caption-content">
+                <div class="font-alt mb-30 titan-title-size-1">Hello &amp; welcome</div>
+                <div class="font-alt mb-40 titan-title-size-4">MANI SHOP</div>
+                <a class="section-scroll btn btn-border-w btn-round" href="#portfolio">둘러보기</a>
+            </div>
+        </div>
+    </section>
+    <div class="main">
+        <section class="module" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ul class="filter font-alt" id="filters">
+                            <li><a class="current wow fadeInUp" href="#" data-filter="*">전체</a></li>
+                            <li><a class="wow fadeInUp" href="#" data-filter=".illustration"
+                                   data-wow-delay="0.2s">쿡웨어</a></li>
+                            <li><a class="wow fadeInUp" href="#" data-filter=".marketing"
+                                   data-wow-delay="0.4s">테이블웨어</a></li>
+                            <li><a class="wow fadeInUp" href="#" data-filter=".photography"
+                                   data-wow-delay="0.6s">조리도구</a></li>
+                            <li><a class="wow fadeInUp" href="#" data-filter=".webdesign" data-wow-delay="0.6s">주방잡화</a>
+                            </li>
+                            <li><a class="wow fadeInUp" href="#" data-filter=".webdesign"
+                                   data-wow-delay="0.6s">저장용기/수납</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="works-grid works-grid-masonry works-grid-3 works-hover-d" id="works-grid">
+                    <li class="work-item illustration webdesign"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/960.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio1.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item marketing photography"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/400.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio2.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item illustration photography"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/300.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio3.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item marketing photography"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/235.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio4.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item illustration webdesign"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/430.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio5.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item marketing webdesign"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/680.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio6.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item marketing webdesign"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/450.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio7.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item marketing"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/500.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio9.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item illustration photography"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/440.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio10.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item illustration marketing"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/480.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio11.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                    <li class="work-item illustration webdesign"><a href="#">
+                        <div class="work-image"><img th:src="@{/images/mani/233.jpg}"
+                                                     src="/static/images/portfolio/masonry-portfolio8.jpg"
+                                                     alt="Portfolio Item"/></div>
+                        <div class="work-caption font-alt">
+                            <h3 class="work-title"></h3>
+                            <div class="work-descr"></div>
+                        </div>
+                    </a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</div>
+</html>
